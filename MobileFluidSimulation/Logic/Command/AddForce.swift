@@ -11,8 +11,8 @@ import MetalKit
 
 struct AddForce: ShaderCommand {
     struct TouchEvent {
-        let delta: float2
-        let center: float2
+        let delta: SIMD2<Float>
+        let center: SIMD2<Float>
     }
     
     static let functionName: String = "addForce"
